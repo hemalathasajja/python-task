@@ -1,9 +1,12 @@
-num = 1234
-reversed_num = 0
+#write a program to reverse an integer value 54321 python
+#here we are using M A D Technique % + // i.e modulus,addition,division
 
-while num != 0:
-    digit = num % 10
-    reversed_num = reversed_num * 10 + digit
-    num //= 10
+number = int(input("enter number: "))
+reverse = 0
+temp = number
+while temp != 0:
+    last_digit = temp % 10
+    reverse = reverse * 10 + last_digit
+    temp = temp // 10
 
-print("Reversed Number: " + str(reversed_num))
+print("Reverse of Number : ", number, " is : ", reverse )
